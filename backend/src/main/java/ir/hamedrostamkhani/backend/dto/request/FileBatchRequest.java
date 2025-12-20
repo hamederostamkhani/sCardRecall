@@ -1,0 +1,9 @@
+package ir.hamedrostamkhani.backend.dto.request;
+
+import jakarta.validation.constraints.NotEmpty;
+
+import java.util.List;
+
+public record FileBatchRequest(
+        @NotEmpty List<String> paths
+) { }

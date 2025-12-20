@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/s_card_recall_dev
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+app:
+  storage:
+    path: uploads
+    max-size: 52428800 # 50MB
+    allowed-types:
+      - image/jpeg
+      - image/png
+      - image/gif
+      - image/svg
+      - audio/mpeg
+      - audio/mp3
+      - video/mp4
+      - application/pdf
+      - application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+server:
+  port: 8000
