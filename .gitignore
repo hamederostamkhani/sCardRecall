@@ -1,0 +1,53 @@
+# ========================================
+# Global
+# ========================================
+
+# Environment
+.env
+*.env
+
+# Logs
+*.log
+logs/
+*.out
+
+# ========================================
+# Backend (Spring Boot / Java)
+# ========================================
+backend/target/
+backend/.idea/
+backend/*.iml
+backend/.classpath
+backend/.project
+backend/.settings/
+
+# ========================================
+# Webapp (Vue / Node.js)
+# ========================================
+webapp/node_modules/
+webapp/dist/
+webapp/.env.local
+webapp/.env.*.local
+webapp/.vite/
+
+# ========================================
+# Android (Kotlin / Gradle)
+# ========================================
+android/.gradle/
+android/build/
+android/local.properties
+android/.idea/
+android/*.iml
+
+# ========================================
+# Desktop (JavaFX / Maven)
+# ========================================
+desktop/target/
+desktop/.idea/
+desktop/*.iml
+
+# ========================================
+# OS Files
+# ========================================
+.DS_Store
+Thumbs.db
