@@ -148,6 +148,8 @@ public class UserRepositoryTest {
         assertThat(deletedUser).isEmpty();
     }
 
+    // Todo: Add test for cascade delete in hard delete
+
     @Test
     void testSoftDelete_WhenUserExists_ShouldUpdateDeletedAt() {
         // Act
@@ -162,6 +164,8 @@ public class UserRepositoryTest {
         assertThat(deletedUser.get().getId()).isEqualTo(user.getId());
         assertThat(deletedUser.get().getDeletedAt()).isNotNull();
     }
+
+    // Todo: Add test for cascade delete in soft delete (update deleted_at for sub child)
 
     @Test
     void testFindByEmail_WhenUserExists_ShouldReturnUser() {
